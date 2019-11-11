@@ -1,10 +1,9 @@
 body {
   background-color: rgb(250, 250, 250);
-
 }
 
 .main {
-  margin-top: 70px;
+  margin-top: 40px;
   position: relative;
   text-align: right;
 }
@@ -205,6 +204,10 @@ nav ul li a .logo-img {
   font-family: "Helvetica";
 }
 
+#projects {
+  background-color: rgb(250, 250, 250);
+}
+
 .card {
   width: 350px;
   margin-left: 14px;
@@ -222,13 +225,25 @@ nav ul li a .logo-img {
   border-style: solid;
   background-color: #FFF;
   display: flex;
-flex-direction: column;
-justify-content: center;  /* Centering y-axis */
-align-items :center; /* Centering x-axis */
+  flex-direction: column;
+  justify-content: center;  /* Centering y-axis */
+  align-items :center; /* Centering x-axis */
 }
 
 .card .frame img {
   width: 30%;
+}
+
+#frame-meetpass {
+  background-color: #0095FF;
+}
+
+#frame-flare {
+  background-color: #CE2029;
+}
+
+#frame-flare img {
+  width: 35%;
 }
 
 .card .title {
