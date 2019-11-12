@@ -1,5 +1,25 @@
 body {
-  background-color: #FFF:
+  background-color: rgb(250, 250, 250);
+}
+
+h1::selection {
+  background: #87FFD9;
+}
+
+h2::selection {
+  background: #87FFD9;
+}
+
+h3::selection {
+  background: #87FFD9;
+}
+
+a::selection {
+  background: #87FFD9;
+}
+
+p::selection {
+  background: #87FFD9;
 }
 
 .main {
@@ -110,8 +130,66 @@ nav ul li a .logo-img {
   }
 }
 
+nav {
+  margin: 0;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li a .logo-img {
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+}
+
+.link {
+  padding: 12px 16px 12px 16px;
+  border-radius: 6px;
+  margin-left: 10px;
+  font-size: 20px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 8px;
+  color: #4E4E50;
+  font-size: 20px;
+  font-family: "Rubik";
+  display: block;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #f0f0f0;
+  color: #000;
+  text-decoration: none;
+}
+
+.mail-link {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Rubik";
+  color: #404040;
+}
+
 .top {
-  margin-bottom: 50px;
   height: 80vh;
   vertical-align: middle;
   display: table-cell;
@@ -128,7 +206,7 @@ nav ul li a .logo-img {
 .top h2 {
   margin: 0;
   margin-bottom: 10px;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 500;
   color: #4E4E50;
   font-family: 'Rubik', sans-serif;
@@ -136,7 +214,7 @@ nav ul li a .logo-img {
 
 .top h3 {
   margin: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 30px;
   font-weight: 300;
   color: #000;
@@ -182,6 +260,7 @@ nav ul li a .logo-img {
   border-color: #000;
   border-width: 2px;
   padding: 14px 24px 14px 24px;
+  margin-bottom: 100px;
 }
 
 .top-button-secondary:hover {
@@ -193,7 +272,6 @@ nav ul li a .logo-img {
 
 .section {
   justify-content: center;
-  background-color: #F4F2E6;
   scroll-behavior: smooth;
 }
 
@@ -201,67 +279,62 @@ nav ul li a .logo-img {
   padding-top: 50px;
   font-size: 50px;
   font-weight: 600;
+  font-color: #107FFF;
   font-family: "Helvetica";
 }
 
-#projects {
-  background-color: #FFF;
+
+
+/* nav ul li a .logo-img {
+  max-width: 75px;
+  max-height: 75px;
+  border-radius: 50%;
+} */
+.content {
+  margin-top: 24px;
+  padding: 0;
+  list-style-type: none;
 }
 
-.card {
-  width: 350px;
-  margin-left: 14px;
-  display: inline-block;
+.content-item {
+  height: 80px;
 }
 
-.card:hover {
-  border-color: #0984e3;
-}
-
-.card .frame {
-  height: 450px;
-  border-color: #000;
-  border-width: 2px;
-  border-style: solid;
-  background-color: #FFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;  /* Centering y-axis */
-  align-items :center; /* Centering x-axis */
-}
-
-.card .frame img {
-  width: 30%;
-}
-
-#frame-meetpass {
-  background-color: #0095FF;
-}
-
-#frame-flare {
-  background-color: #CE2029;
-}
-
-#frame-flare img {
-  width: 35%;
-}
-
-.card .title {
-  font-size: 30px;
+.content-item h3 {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "Rubik";
-  margin: 0;
-  margin-top: 14px;
 }
 
-.card .description {
-  font-size: 18px;
-  font-weight: 300;
-  font-family: "Rubik";
+.content-item a {
+  color: #0095FF;
+}
+
+.content-item a:hover {
+  text-decoration: none;
+}
+
+.content-item p {
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 80px;
-  color: #4E4E50;
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-family: "IBM PLEX SANS";
+}
+
+.content-icon {
+  float: left;
+  margin-right: 20px;
+}
+
+.content-text {
+
+}
+
+.content-item img {
+  vertical-align: center;
+  height: 50px;
 }
 
 .contact {
@@ -313,4 +386,20 @@ nav ul li a .logo-img {
 .ml-auto p {
   display: inline;
   font-size: 20px;
+}
+
+#facebook:hover {
+  color: #155BE7;
+}
+
+#instagram:hover {
+  color: #9F00BB;
+}
+
+#github:hover {
+  color: #000000;
+}
+
+#linkedin:hover {
+  color: #0E5C9E;
 }
