@@ -4,13 +4,12 @@ var main = $(".main");
 var topSection = $("#top-section");
 var topDiv = $(".top");
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
+$('a[href^="#"]').click(function () {
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+
+    return false;
 });
 
 var roles = ["👉Full Stack iOS Developer", "👉Full Stack Web Developer", "👉Next: Software Engineering Intern @ Microsoft", "👉Prev: Software Engineering Intern @ Apple", "👉CS/Business @ USC"];
