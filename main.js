@@ -1,5 +1,8 @@
 var rolesText = $("#roles");
 var bannerText = $("#banner");
+var main = $(".main");
+var topSection = $("#top-section");
+var topDiv = $(".top");
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -11,10 +14,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 var roles = ["👉Full Stack iOS Developer", "👉Full Stack Web Developer", "👉Next: Software Engineering Intern @ Microsoft", "👉Prev: Software Engineering Intern @ Apple", "👉CS/Business @ USC"];
-var earlyLate = ["Working late or working early?", "Are you a night owl?", "Good...morning?"];
+var earlyLate = ["Working late or up early?", "Are you a night owl?", "Good...morning?"];
 var morning = ["Morning, traveler!", "Rise and shine", "Another day, another "];
 var afternoon = ["Afternoon, traveler!", "Today's a great day!", "On the grind"];
 var night = ["Night, traveler!", "Working late?", "Are you a night owl?"];
+var colors = ["#12CBC4", "#E84393", "#FDCB6E", "#6C5CE7"];
 
 var counter = 0;
 setInterval(function() { changeRoles(rolesText); }, 4000);
@@ -43,12 +47,20 @@ function timeChange(e) {
   else if(hour >= 6 && hour < 12) {
     bannerText.text(morning[rand]);
   }
-
   else if(hour >= 12 && hour < 18) {
     bannerText.text(afternoon[rand]);
   }
-
   else if(hour >= 18 && hour < 24) {
     bannerText.text(night[rand]);
   }
+}
+
+chooseBackgroundColor();
+
+function chooseBackgroundColor() {
+  var rand = Math.floor(Math.random() * colors.length);
+  var color = colors[rand];
+  main.css("background-color", color);
+  topSection.css("background-color", color);
+  topDiv.css("background-color", color);
 }
