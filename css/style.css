@@ -315,7 +315,10 @@ nav ul li a .logo-img {
 }
 
 .content-text {
+}
 
+.content-text h3 {
+  display: inline-block;
 }
 
 .content-item img {
