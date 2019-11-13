@@ -10,9 +10,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lora|PT+Serif" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Lora|PT+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -47,113 +51,148 @@
 </head>
 
 <body>
-
   <div class="main">
-    <div class="bitmoji">
-      <img src="images/wavebitmoji.png"></img>
+    <div class="nav" id="top-section">
+      <div class="container">
+        <nav>
+          <ul>
+            <li>
+              <a href="/index.html" class="logo">
+                <img class="logo-img" src="images/favicon/apple-icon.png">
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://blog.rolandshen.com/">Blog</a>
+            </li>
+            <li>
+              <a class="link" href="https://instagram.com/shotsbyroland">Photos</a>
+            </li>
+            <li>
+              <a class="link" href="https://github.com/rolandtshen">Github</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div id="content">
-      <h1>Roland Shen</h1>
-      <nav>
-        <ul class="menu">
-          <li><a class="link" href="http://blog.rolandshen.com">Blog</a></li>
-          <li><a class="link" href="https://github.com/rolandtshen">Github</a></li>
-          <li><a class="link" href="https://instagram.com/shotsbyroland">Photos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-
-  <div class="description">
-    <h2>a bit about me</h2>
-    <p>Hey, what's up! 👋</p>
-    <p>Thanks for checking out my site. I'm a sophomore Computer Science/Business Administration student at USC.
-      I love playing basketball, doing magic tricks, taking photos, and occasionally blogging. I'm an experienced iOS developer, and recently I've been learning more
-      about web and backend development. I'd love if you check out some of my experiences and projects below.</p>
-    <a href="files/roland_resume_2019.pdf">Resume →</a>
-  </div>
-
-  <div class="container">
-    <div class="current">
-      <h2>Experiences </h2>
-      <div class="row hidden-md-up">
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5>SparkSC ✨</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Board Member</h6>
-            <p class="cardText">I'm working on initiatives that bolster the entrepreneurial spirit at USC and in LA.</p>
-            <a href="https://sparksc.org" class="card-link">Learn more →</a>
-          </div>
-        </div>
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5 class="card-title">LavaLab 🌋</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Developer</h6>
-            <p class="cardText">Currently working on a team of four as an engineer to build a full fledged tech startup.</p>
-            <a href="https://usclavalab.org" class="card-link">Learn more →</a>
-          </div>
-        </div>
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5 class="card-title">Apple </h5>
-            <h6 class="card-subtitle mb-2 text-muted">SWE Intern</h6>
-            <p class="cardText">I spent my 2019 summer as a Sofware Engineering Intern at Apple Inc.</p>
-            <a href="https://developer.apple.com/documentation" class="card-link">Learn more →</a>
+    <div class="container">
+      <div class="top">
+        <div class="inner-top">
+          <h1 id="banner"></h1>
+          <h2>I'm Roland</h2>
+          <h3 id="roles">👉CS/Business @ USC</h3>
+          <div>
+            <a class="top-button-primary" href="#me">Who am I?</a>
+            <a class="top-button-secondary" href="files/roland_resume_2019.pdf">Resume</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="projects">
+  <a id="#me">
+  <div class="section">
+    <div class="container">
+      <h2>Experiences</h2>
+      <ul class="content">
+        <li class="content-item">
+          <div class="content-icon">
+            <img src="images/microsoft.png">
+          </div>
+          <div class="content-text">
+            <h3>Microsoft (Summer 2020)</h3>
+            <p>Incoming Software Engineering Intern.</p>
+          </div>
+        </li>
+        <li class="content-item">
+          <div class="content-icon">
+            <img src="images/apple.png">
+          </div>
+          <div class="content-text">
+            <h3>Apple (Summer 2019)</h3>
+            <p>Software Engineering Intern, Developer Publications team.</p>
+          </div>
+        </li>
+        <li class="content-item">
+          <div class="content-icon">
+            <img src="images/spark.png">
+          </div>
+          <div class="content-text">
+            <h3>Spark SC (2019-Present)</h3>
+            <p>I'm working on initiatives that bolster the entrepreneurial spirit at USC and in LA.</p>
+          </div>
+        </li>
+        <li class="content-item">
+          <div class="content-icon">
+            <img src="images/techla-icon.png">
+          </div>
+          <div class="content-text">
+            <h3>Tech.LA Fellows (2019-Present)</h3>
+            <p>Fellowship program that matches students with internships at LA startups.</p>
+          </div>
+        </li>
+        <li class="content-item">
+          <div class="content-icon">
+            <img src="images/lavalab.png">
+          </div>
+          <div class="content-text">
+            <h3>LavaLab (2019)</h3>
+            <p>Worked as engineer with a PM and designer to build a mobile-first CRM for small enterprises.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
     <div class="container">
       <h2>Projects</h2>
-      <div class="row hidden-md-up">
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5>MeetPass 💳</h5>
-            <p class="cardText">MeetPass is a digital business card app that makes it easy to share all your social accounts in one scan.</p>
-            <a href="http://meetpass.io" class="card-link">Learn more →</a>
-          </div>
-        </div>
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5 class="card-title">Handle <img src="images/handle.png" style="width: 20px; height: 20px; margin-bottom: 5px;"></h5>
-            <p class="cardText">A mobile-first CRM for small enterprises. Won LavaLab incubator judges' award for best product.</p>
-            <a href="files/handle_presentation.pdf" class="card-link">Learn more →</a>
-          </div>
-        </div>
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5>PostAI <img src="images/postai.ico" style="width: 20px; height: 20px; margin-bottom: 5px; margin-left: 3px;"></h5>
-            <p class="cardText">A website intended to educate about the current state and future of an AI-powered world.</p>
-            <a href="http://postai.org" class="card-link">Learn more →</a>
-          </div>
-        </div>
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5 class="card-title">Transcribe 🎤</h5>
-            <p class="cardText">A tool made for journalists that automatically transcribes interviews in real time.</p>
-            <a href="https://itunes.apple.com/us/app/transcribe-interview-helper/id1312701070?ls=1&mt=8" class="card-link">Learn more →</a>
-          </div>
-        </div>
-        <div class="card" style="width: 350px;">
-          <div class="card-body">
-            <h5 class="card-title">Flare 🔥</h5>
-            <p class="cardText">The location based question and answer app. Connect with your community by asking anything.</p>
-            <a href="https://itunes.apple.com/us/app/flare-location-based-questions/id1143355825?ls=1&mt=8" class="card-link">Learn more →</i></a>
-          </div>
-        </div>
-      </div>
+      <ul class="content">
+        <li class="content-item">
+          <a href="https://meetpass.io>"><h3>MeetPass</h3></a>
+          <p>A digital business card app that makes it easy to share all your social accounts in one scan.</p>
+        </li>
+        <li class="content-item">
+          <a href="https://postai.org"><h3>Post AI</h3></a>
+          <p>Education on the current state and future of an AI-powered world.</p>
+        </li>
+        <li class="content-item">
+          <a href="https://rolandshen.com/files/handle_presentation.pdf"><h3>Handle</h3></a>
+          <p>A mobile-first CRM for small enterprises. Won LavaLab incubator judges' award for best product.</p>
+        </li>
+        <li class="content-item">
+          <a href="https://apps.apple.com/us/app/transcribe-interview-helper/id1312701070?ls=1"><h3>Transcribe</h3></a>
+          <p>A tool to help journalists by automatically transcribing interviews in real time.</p>
+        </li>
+        <li class="content-item">
+          <a href="https://apps.apple.com/us/app/flare-location-based-questions/id1143355825?ls=1"><h3>Flare</h3></a>
+          <p>A location based Q&A app. Connect with your community by asking anything.</p>
+        </li>
+      </ul>
     </div>
   </div>
 
-  <div class="contact">
+  <div class="section">
     <div class="container">
-      <h2>Let's Chat!</h2>
-      <a class="link" href="mailto:rolandtshen@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Drop me a line</a>
+      <h2>Thoughts</h2>
+      <ul class="content">
+        <li class="content-item">
+          <a href="https://blog.rolandshen.com/switzerland-abroad/"><h3>A Semester in Switzerland</h3></a>
+          <p>Four months ago, I couldn’t believe I was going to spend the next four months in...</p>
+        </li>
+        <li class="content-item">
+          <a href="https://blog.rolandshen.com/basketball-and-me/"><h3>Basketball and Me</h3></a>
+          <p>My first day of high school, I stood 4’11, weighed 100 pounds, and...</p>
+        </li>
+      </ul>
     </div>
   </div>
+
+  <!-- <div class="contact">
+    <div class="container">
+      <h2>Let's Chat!</h2>
+      <a class="mail-link" href="mailto:rolandtshen@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> Drop me a line</a>
+    </div>
+  </div> -->
 
   <div class="container">
     <div class="footer">
@@ -165,19 +204,19 @@
         </div>
         <div class="ml-auto">
           <span class="align-middle">
-            <a href="https://facebook.com/rolandtshen"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com/rolandtshen"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/rolandtshen"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/rolandtshen"><i class="fab fa-linkedin"></i></a>
+            <a href="https://facebook.com/rolandtshen" id="facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com/rolandtshen" id="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/rolandtshen" id="github"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/rolandtshen" id="linkedin"><i class="fab fa-linkedin"></i></a>
           </span>
         </div>
       </div>
     </div>
   </div>
-
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
   <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
