@@ -12,7 +12,7 @@ $('a[href^="#"]').click(function () {
     return false;
 });
 
-var roles = ["👉Full Stack iOS Developer", "👉Full Stack Web Developer", "👉Next: Software Engineering Intern @ Microsoft", "👉Prev: Software Engineering Intern @ Apple", "👉CS/Business @ USC"];
+var roles = ["👉Full Stack iOS Developer", "👉Full Stack Web Developer", "👉Currently: Software Engineering Intern @ Microsoft", "👉Prev: Software Engineering Intern @ Apple", "👉CS/Business @ USC"];
 var earlyLate = ["Working late or up early?", "Are you a night owl?", "Good...morning?"];
 var morning = ["Morning, traveler!", "Rise and shine", "Another day, another "];
 var afternoon = ["Afternoon, traveler!", "Today's a great day!", "On the grind"];
